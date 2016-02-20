@@ -1,6 +1,6 @@
 import bottle
 import os
-import Snake.py as Snake
+import Snake
 
 @bottle.route('/static/<path:path>')
 def static(path):
@@ -23,8 +23,8 @@ def index():
 @bottle.post('/start')
 def start():
     data = bottle.request.json
+    Snake.__init__(data)
 
-    # TODO: Do things with data
 
     return {
         
