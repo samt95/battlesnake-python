@@ -15,3 +15,6 @@ class Snake:
 
 def nearWall(data):
 	print data
+
+def update(data):
+	

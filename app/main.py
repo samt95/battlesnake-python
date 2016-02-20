@@ -34,11 +34,10 @@ def start():
 @bottle.post('/move')
 def move():
     data = bottle.request.json
-    Snake.nearWall(data)
-    # TODO: Do things with data
+    nextMove = Snake.update(data)
 
     return {
-        'move': 'north',
+        'move': nextMove,
         'taunt': 'battlesnake-python !'
     }
 
