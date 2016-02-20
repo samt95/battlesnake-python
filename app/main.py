@@ -1,6 +1,6 @@
 import bottle
 import os
-
+import Snake.py as Snake
 
 @bottle.route('/static/<path:path>')
 def static(path):
@@ -26,15 +26,16 @@ def start():
 
     # TODO: Do things with data
 
-    return {
-        'taunt': 'battlesnake-python START!'
+        
+    'taunt': 'battlesnake-python!'
+        
     }
 
 
 @bottle.post('/move')
 def move():
     data = bottle.request.json
-
+    Snake.nearWall(data)
     # TODO: Do things with data
 
     return {
