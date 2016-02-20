@@ -1,6 +1,6 @@
 import bottle
 import os
-import Snake.py as Snake
+import Snake
 
 @bottle.route('/static/<path:path>')
 def static(path):
@@ -26,9 +26,8 @@ def start():
 
     # TODO: Do things with data
 
-        
+    return {   
     'taunt': 'battlesnake-python!'
-        
     }
 
 
