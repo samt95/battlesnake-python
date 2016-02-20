@@ -26,3 +26,4 @@ def move(data):
 def nearWall(data):
 
 	return true
+
