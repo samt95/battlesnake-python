@@ -26,11 +26,8 @@ def start():
     Snake.__init__(data)
 
 
-    return {
-        
-        'taunt': 'battlesnake-python!'
-        
-        
+    return {   
+    'taunt': 'battlesnake-python!'
     }
 
 
@@ -42,7 +39,7 @@ def move():
 
     return {
         'move': 'north',
-        'taunt': 'battlesnake-python!'
+        'taunt': 'battlesnake-python !'
     }
 
 
