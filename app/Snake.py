@@ -12,7 +12,7 @@ class Snake:
 
 
 def move(data):
-	snake = [s for s in data.snakes if self.snake_id = s.id][0]
+	snake = [s for s in data.snakes if self.snake_id == s.id][0]
 	pos = snake.coords
 	head = pos[0]
 
