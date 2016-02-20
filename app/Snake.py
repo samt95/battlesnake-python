@@ -5,7 +5,7 @@ class Snake:
 
 
 		self.width = start_data.width
-		self.snake = [s for s in start_data.snakes if s.id = self.snake_id]
+		self.snake = [s for s in start_data.snakes if s.id == self.snake_id]
 		self.moves = ["north", "south", "east", "west"]
 		self.move = moves[0]
 
