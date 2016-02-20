@@ -27,7 +27,7 @@ def start():
     # TODO: Do things with data
 
     return {
-        'taunt': 'battlesnake-python!'
+        'taunt': 'battlesnake-python START!'
     }
 
 
@@ -39,7 +39,7 @@ def move():
 
     return {
         'move': 'north',
-        'taunt': 'battlesnake-python!'
+        'taunt': 'battlesnake-python !'
     }
 
 
