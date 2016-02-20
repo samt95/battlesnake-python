@@ -34,10 +34,9 @@ def start():
 @bottle.post('/move')
 def move():
     data = bottle.request.json
-    nextMove = Snake.update(data)
 
     return {
-        'move': nextMove,
+        'move': Snake.move(data),
         'taunt': 'battlesnake-python !'
     }
 
